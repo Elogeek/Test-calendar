@@ -1,0 +1,118 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.clearfix::after, .calendar ol::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*Calendar Styling */
+.calendar {
+    border-radius: 10px;
+}
+
+.calendar ol li {
+    float: left;
+    width: 14.28571%;
+}
+
+.calendar .day-names li {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.calendar .days li {
+    border-bottom: 1px solid #eee;
+    min-height: 8rem;
+}
+
+.calendar .days li .date {
+    margin: 0.5rem 0;
+}
+
+/*event*/
+.calendar .days li .event {
+    font-size: 0.75rem;
+    padding: 0.4rem;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 4rem;
+    margin-bottom: 1px;
+    background-color: #3366CC;
+}
+
+.calendar .days li:nth-child(n+29) {
+    border-bottom: none;
+}
+
+.calendar .days li.outside .date {
+    color: #ddd;
+}
+
+/* header*/
+body {
+    min-height: 100vh;
+    background-color: deepskyblue;
+    background-image: linear-gradient(147deg, #11eceb 0%, #000000 100%);
+}
+/*week*/
+.day-names {
+    background-image: linear-gradient(200deg, #11eceb 0%, #000000 100%);
+    color: white;
+    height: 40px;
+    text-align: center;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+/*month text*/
+.month {
+    font-weight: normal;
+    font-size: 50px;
+}
+/*bts*/
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+/*bts*/
+.bts-next {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+/*bts*/
+#next,#prev,#btn1,#btn2,#btn3 {
+    width: 100px;
+    height: 2rem;
+    background-color: white;
+    color: #11eceb;
+    text-align: center;
+    border: 2px solid deepskyblue;
+    font-weight: bold;
+}
+/*quand on clique sur les bts*/
+
+#next:hover,#prev:hover,#btn1:hover,#btn2:hover,#btn3:hover {
+    background-color: #11eceb;
+    color :white;
+}
+
+/* quand on clique sur une case d'un jour*/
+.calendar .days li:hover {
+    background-color: #11eceb;
+}
+
+/*responsive*/
+@media (min-width: 992px) {
+    .month {
+        font-size: 3.5rem;
+    }
+}

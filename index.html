@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test calendar Bootstrap and Jquery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e3ddf954eb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container py-5">
+        <header class="text center text white mb-5">
+            <h1 class="display-4">Mon rendez-vous</h1>
+        </header>
+    </div>
+
+    <!-- calendar-->
+    <div class="calendar shadow bg-white p-5">
+        <div class="d-flex align-items-center">
+            <h2 class="month font-weight-bold mb-0 text-uppercase">Mars 2021</h2>
+
+        </div>
+        <div class="buttons">
+            <button type="button" id="btn1">day</button>
+            <button type="button" id="btn2">week</button>
+            <button type="button" id="btn3">Month</button>
+        </div>
+        <div class="bts-next">
+            <button type="button" id="next"> < </button>
+            <button type="button" id="prev"> > </button>
+        </div>
+        <p class="font-italic text-muted mb-5">Sélectionner votre rendez-vous.</p>
+        <div class="day-names list-unstyled">
+            <ol class="day-names list-unstyled">
+                <li>Lundi</li>
+                <li>Mardi</li>
+                <li>Mercredi</li>
+                <li>Jeudi</li>
+                <li>Vendredi</li>
+                <li>Samedi</li>
+                <li>Dimanche</li>
+            </ol>
+        </div>
+        <ol class="days list-unstyled">
+            <li>
+                <div class="date">1</div>
+            </li>
+            <li>
+                <div class="date">2</div>
+            </li>
+            <li>
+                <div class="date">3</div>
+            </li>
+            <li>
+                <div class="date">4</div>
+            </li>
+            <li>
+                <div class="date">5</div>
+            </li>
+            <li>
+                <div class="date">6</div>
+            </li>
+            <li>
+                <div class="date">7</div>
+            </li>
+            <li>
+                <div class="date">8</div>
+            </li>
+            <li>
+                <div class="date">9</div>
+            </li>
+            <li>
+                <div class="date">10</div>
+            </li>
+            <li>
+                <div class="date">11</div>
+            </li>
+            <li>
+                <div class="date">12</div>
+            </li>
+            <li>
+                <div class="date">13</div>
+
+            </li>
+            <li>
+                <div class="date">14</div>
+            </li>
+            <li>
+                <div class="date">15</div>
+            </li>
+            <li>
+                <div class="date">16</div>
+            </li>
+            <li>
+                <div class="date">17</div>
+            </li>
+            <li>
+                <div class="date">18</div>
+            </li>
+            <li>
+                <div class="date">19</div>
+            </li>
+            <li>
+                <div class="date">20</div>
+            </li>
+            <li>
+                <div class="date">21</div>
+                <div class="event">Event Name</div>
+            </li>
+            <li>
+                <div class="date">22</div>
+                <div class="event">Event with Longer Name</div>
+            </li>
+            <li>
+                <div class="date">23</div>
+            </li>
+            <li>
+                <div class="date">24</div>
+            </li>
+            <li>
+                <div class="date">25</div>
+            </li>
+            <li>
+                <div class="date">26</div>
+            </li>
+            <li>
+                <div class="date">27</div>
+            </li>
+            <li>
+                <div class="date">28</div>
+            </li>
+            <li>
+                <div class="date">29</div>
+            </li>
+            <li>
+                <div class="date">30</div>
+            </li>
+            <li>
+                <div class="date">31</div>
+            </li>
+            <!--les jours de l'autre mois === class outside-->
+            <li class="outside">
+                <div class="date">1</div>
+            </li>
+            <li class="outside">
+                <div class="date">2</div>
+            </li>
+            <li class="outside">
+                <div class="date">3</div>
+            </li>
+            <li class="outside">
+                <div class="date">4</div>
+            </li>
+        </ol>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
