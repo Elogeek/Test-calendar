@@ -3,6 +3,12 @@
     box-sizing: border-box;
 }
 
+/* header mon rdz-vs*/
+.py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
 .clearfix::after, .calendar ol::after {
     content: ".";
     display: block;
@@ -11,7 +17,7 @@
     visibility: hidden;
 }
 
-/*Calendar Styling */
+/*Calendar*/
 .calendar {
     border-radius: 10px;
 }
@@ -62,6 +68,7 @@ body {
     background-color: deepskyblue;
     background-image: linear-gradient(147deg, #11eceb 0%, #000000 100%);
 }
+
 /*week*/
 .day-names {
     background-image: linear-gradient(200deg, #11eceb 0%, #000000 100%);
@@ -71,36 +78,34 @@ body {
     font-weight:bold;
     text-transform:uppercase;
 }
+
 /*month text*/
 .month {
     font-weight: normal;
     font-size: 50px;
 }
+
 /*bts*/
 .buttons {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
 }
+
 /*bts*/
-.bts-next {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-}
-/*bts*/
-#next,#prev,#btn1,#btn2,#btn3 {
+#btnNext,#btnPrev {
     width: 100px;
     height: 2rem;
     background-color: white;
-    color: #11eceb;
+    color: deepskyblue;
     text-align: center;
-    border: 2px solid deepskyblue;
+    border: 2px solid #11eceb;
     font-weight: bold;
 }
+
 /*quand on clique sur les bts*/
 
-#next:hover,#prev:hover,#btn1:hover,#btn2:hover,#btn3:hover {
+#btnNext:hover,#btnPrev:hover {
     background-color: #11eceb;
     color :white;
 }
