@@ -8,16 +8,18 @@
     <script src="https://kit.fontawesome.com/e3ddf954eb.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container py-5">
-        <header class="text center text white mb-5">
-            <h1 class="display-4">Mon rendez-vous</h1>
+    <div class="container">
+        <header class="header">
+            <h1 class="header-text">Mon rendez-vous</h1>
         </header>
     </div>
 
     <!-- calendar-->
+    <!-- template bootstrap calendar === calendar shadow bg-white p-5-->
     <div class="calendar shadow bg-white p-5" id="app">
-        <div class="d-flex align-items-center">
-            <h2 class="month font-weight-bold mb-0 text-uppercase">Mars 2021</h2>
+        <div class="center">
+            <h2 id="center-month">Mars 2021</h2>
+            <p id="center-text">Sélectionner votre rendez-vous.</p>
 
         </div>
         <!--buttons month next/prev-->
@@ -26,7 +28,6 @@
             <button type="button" id="btnPrev"> >> </button>
         </div>
 
-        <p class="font-italic text-muted mb-5">Sélectionner votre rendez-vous.</p>
         <div class="day-names list-unstyled">
             <!--week-->
             <ol class="day-names list-unstyled">
@@ -79,7 +80,6 @@
             </li>
             <li>
                 <div class="date">13</div>
-
             </li>
             <li>
                 <div class="date">14</div>
@@ -133,7 +133,6 @@
             </li>
             <li>
                 <div class="date">30</div>
-            </li>
             <li>
                 <div class="date">31</div>
             </li>

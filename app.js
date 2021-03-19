@@ -1,18 +1,19 @@
-// quand on clique sur un jour du mois , alors c'est le jour qui s'affiche ( h par h)
+// when a user clicks on a day of the month (calendar), then that same day is displayed (h by h)
 $(".date").click(function () {
 
     $(".date").each(function (index) {
-        // cool toutes les cases sont cliquables
-        console.log(index + "=> " + $(this).text("coucou"));
+        //all boxes are clickable
+       // console.log(index + "=> " + $(this).text("coucou"));
 
-        //affichage du mois suivant
+
+        //next month display
         $(document).ready(function() {
             $("#btnNext").click(function () {
                 $(this).next();
             })
         });
 
-        //affichage du mois précédent
+        //previous month display
         $(document).ready(function() {
             $("#btnPrev").click(function () {
                 $(this).prev();

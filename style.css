@@ -4,9 +4,18 @@
 }
 
 /* header mon rdz-vs*/
-.py-5 {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
+.container {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+#center-month {
+    font-size: xx-large;
+}
+
+#center-text {
+    font-style: italic;
+    color: darkgray;
 }
 
 .clearfix::after, .calendar ol::after {
@@ -101,6 +110,7 @@ body {
     text-align: center;
     border: 2px solid #11eceb;
     font-weight: bold;
+    margin-bottom: 5rem;
 }
 
 /*quand on clique sur les bts*/
