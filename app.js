@@ -3,7 +3,9 @@ $(".date").click(function () {
 
     $(".date").each(function (index) {
         //all boxes are clickable
-       // console.log(index + "=> " + $(this).text("coucou"));
+        // console.log(index + "=> " + $(this).text("coucou"));
+
+        // display hours by hours (8 => 16)
 
 
         //next month display
